@@ -1,0 +1,4 @@
+*.rbxl*
+*.lock
+sourcemap.json
+brojo.conf
