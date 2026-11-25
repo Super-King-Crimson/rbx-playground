@@ -3,7 +3,6 @@
     Utility for handing LocalPlayer, Character and instances under Character (including Humanoid)
     This is a static class.
 --]]
-
 local Players = game:GetService("Players")
 
 local CommonUtils = script.Parent
