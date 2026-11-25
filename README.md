@@ -18,3 +18,7 @@ luau-lsp lsp --definitions:@roblox=/path/to/globalTypes.d.luau --docs=/path/to/a
 ```
 - You can download globalTypes.d.luau [here](https://luau-lsp.pages.dev/type-definitions/globalTypes.None.d.luau) and the cooresponding documentation [here](https://luau-lsp.pages.dev/api-docs/en-us.json)
 - It is recommended to save these files to a place outside of this place file where you won't accidentally delete it (for example, `~/docs/roblox`)
+- Here is a command that can be run to speed everything up:
+```bash
+curl -Ls <URL> | install -m 644 /dev/stdin <PATH>
+```
