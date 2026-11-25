@@ -1,0 +1,19 @@
+{
+    "ClassName": "Folder",
+    "Children": [
+        {
+            "Name": "Expectation_TameImpala",
+            "ClassName": "Sound",
+            "Properties": {
+                "AudioContent": "rbxasset://sounds/expectation-tame_impala.mp3"
+            }
+        },
+        {
+            "Name": "SlideThroughMyFingers_TameImpala",
+            "ClassName": "Sound",
+            "Properties": {
+                "AudioContent": "rbxasset://sounds/slide_through_my_fingers-tame_impala.mp3"
+            }
+        }
+    ]
+}

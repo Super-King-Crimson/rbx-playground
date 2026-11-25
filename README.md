@@ -22,3 +22,7 @@ luau-lsp lsp --definitions:@roblox=/path/to/globalTypes.d.luau --docs=/path/to/a
 ```bash
 curl -Ls <URL> | install -m 644 /dev/stdin <PATH>
 ```
+
+## Custom audio
+- You can upload custom audio to studio through this path: `~/.var/app/org.vinegarhq.Vinegar/data/vinegar/versions/<YOUR-ROBLOX-VERSION>/content/sounds`
+- Then refer to it as `rbxasset://sounds/<SONG-FILE-NAME>` to play it

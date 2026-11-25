@@ -28,7 +28,7 @@ SOURCEMAP_PID=
 SERVE_PID=
 
 cleanup() {
-	kill $SOURCEMAP_PID $SERVE_PID
+	kill $SOURCEMAP_PID $SERVE_PID &> /dev/null
 	rm -rf $BROJO_LOCK &>/dev/null
 	exit ${1:-1}
 }
