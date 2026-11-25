@@ -13,10 +13,10 @@ local function recursiveExtract(inst, outputPath)
 	if #inst:GetChildren() > 0 then
 		pcall(function() fs.writeDir(instPath) end)
 
-		if inst:IsA("Script") then
-			fs.writeFile(`{instPath}/init.server.luau`, inst.Source)
-		elseif inst:IsA("LocalScript") then
+		if inst:IsA("LocalScript") then
 			fs.writeFile(`{instPath}/init.client.luau`, inst.Source)
+		elseif inst:IsA("Script") then
+			fs.writeFile(`{instPath}/init.server.luau`, inst.Source)
 		elseif inst:IsA("ModuleScript") then
 			fs.writeFile(`{instPath}/init.luau`, inst.Source)
 		end
@@ -25,10 +25,10 @@ local function recursiveExtract(inst, outputPath)
 			recursiveExtract(child, instPath)
 		end
 	else
-		if inst:IsA("Script") then
-			fs.writeFile(`{instPath}.server.luau`, inst.Source)
-		elseif inst:IsA("LocalScript") then
+		if inst:IsA("LocalScript") then
 			fs.writeFile(`{instPath}.client.luau`, inst.Source)
+		elseif inst:IsA("Script") then
+			fs.writeFile(`{instPath}.server.luau`, inst.Source)
 		elseif inst:IsA("ModuleScript") then
 			fs.writeFile(`{instPath}.luau`, inst.Source)
 		else
